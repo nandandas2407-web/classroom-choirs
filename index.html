@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classroom Choirs — Raw. Unapologetic. Unmistakable.</title>
+  <title>Classroom Choirs — Where the Classroom Becomes a Stage</title>
   <meta name="description" content="A youth-driven cultural collective producing short films, theatre, original music, and photography.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="noise">
+<body>
 
+  <!-- Curtain Loader -->
   <div class="curtain" aria-hidden="true">
     <div class="curtain__panel curtain__panel--left"></div>
     <div class="curtain__panel curtain__panel--right"></div>
   </div>
 
+  <!-- Scroll Progress -->
   <div class="scroll-progress" aria-hidden="true"></div>
   <div class="scroll-progress__label">End of Act</div>
+
+  <!-- Page Transition -->
   <div class="page-transition" aria-hidden="true"></div>
 
-  <!-- TOPBAR -->
+  <!-- ═══════════════════════════════════════════════════════════
+       TOPBAR
+       ═══════════════════════════════════════════════════════════ -->
   <div class="topbar" role="banner">
     <div class="container topbar__inner">
-      <div class="topbar__marquee" aria-label="Announcements">
+      <div class="topbar__marquee" aria-label="Upcoming announcements">
         <div class="topbar__marquee-track">
           <span class="topbar__marquee-item">Short Film Screening — July 15, 2026</span>
           <span class="topbar__marquee-item">Theatre Workshop — July 22, 2026</span>
@@ -34,24 +40,29 @@
         </div>
       </div>
       <div class="topbar__actions">
-        <button class="topbar__action-btn theme-toggle" aria-label="Toggle theme"></button>
         <button class="topbar__action-btn topbar__action-btn--search" aria-label="Search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </button>
         <a href="#" class="topbar__action-btn" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="#" class="topbar__action-btn" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- NAVBAR -->
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════════════════════════════ -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__brand">
         <div class="navbar__emblem" aria-hidden="true">CC</div>
         <span class="navbar__brand-text">Classroom Choirs</span>
       </a>
+
       <div class="navbar__links">
         <a href="index.html" class="navbar__link is-active">Home</a>
         <a href="past-programmes.html" class="navbar__link">Programmes</a>
@@ -59,6 +70,7 @@
         <a href="our-works.html" class="navbar__link">Works</a>
         <a href="members.html" class="navbar__link">Members</a>
       </div>
+
       <div class="navbar__hamburger" aria-label="Toggle menu" role="button" tabindex="0">
         <span class="navbar__hamburger-line"></span>
         <span class="navbar__hamburger-line"></span>
@@ -67,8 +79,9 @@
     </div>
   </nav>
 
+  <!-- Mobile Menu -->
   <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <button class="mobile-menu__close" aria-label="Close menu">&times;</button>
+    <button class="mobile-menu__close" aria-label="Close menu">✕</button>
     <a href="index.html" class="mobile-menu__link">Home</a>
     <a href="past-programmes.html" class="mobile-menu__link">Programmes</a>
     <a href="upcoming-events.html" class="mobile-menu__link">Events</a>
@@ -76,95 +89,97 @@
     <a href="members.html" class="mobile-menu__link">Members</a>
   </div>
 
+  <!-- Search Overlay -->
   <div class="search-overlay" role="dialog" aria-label="Search">
-    <button class="search-overlay__close" aria-label="Close search">&times;</button>
-    <input type="text" class="search-overlay__input" placeholder="Search..." aria-label="Search">
+    <button class="search-overlay__close" aria-label="Close search">✕</button>
+    <input type="text" class="search-overlay__input" placeholder="Search works, events, members..." aria-label="Search">
     <div class="search-overlay__results"></div>
   </div>
 
+  <!-- Lightbox -->
   <div class="lightbox" role="dialog" aria-label="Preview">
-    <button class="lightbox__close" aria-label="Close preview">&times;</button>
+    <button class="lightbox__close" aria-label="Close preview">✕</button>
     <div class="lightbox__content"></div>
   </div>
 
-  <!-- HERO -->
+  <!-- ═══════════════════════════════════════════════════════════
+       HERO — "The Overture"
+       ═══════════════════════════════════════════════════════════ -->
   <section class="hero" aria-label="Hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__grid">
-      <div class="hero__content">
-        <div class="hero__label">Cultural Collective</div>
-        <h1 class="hero__title">
-          Classroom<br><span class="text-gradient">Choirs</span>
-        </h1>
-        <div class="hero__tagline" data-text="Where the classroom becomes a stage."></div>
-        <div class="hero__actions">
-          <a href="our-works.html" class="btn btn--primary">Explore Works</a>
-          <a href="upcoming-events.html" class="btn btn--outline">Upcoming Events</a>
-        </div>
-      </div>
-      <div class="hero__visual">
-        <div class="hero__visual-box">&#127916;</div>
+    <div class="hero__bg film-grain" id="heroBg"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        Classroom<br><span>Choirs</span>
+      </h1>
+      <div class="hero__tagline" data-text="Where the classroom becomes a stage."></div>
+      <div class="hero__actions">
+        <a href="our-works.html" class="btn btn--primary">Explore Our Works</a>
+        <a href="upcoming-events.html" class="btn btn--outline">Upcoming Events</a>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
+  <!-- ═══════════════════════════════════════════════════════════
+       STATS
+       ═══════════════════════════════════════════════════════════ -->
   <section class="stats section--tight" aria-label="Statistics">
     <div class="container">
       <div class="stats__grid reveal-stagger">
         <div class="stats__item">
-          <div class="stats__number"><span class="gradient-text" data-count="30" data-suffix="+">0</span></div>
+          <div class="stats__number" data-count="30" data-suffix="+">0</div>
           <div class="stats__label">Productions</div>
         </div>
         <div class="stats__item">
-          <div class="stats__number"><span class="gradient-text" data-count="200" data-suffix="+">0</span></div>
+          <div class="stats__number" data-count="200" data-suffix="+">0</div>
           <div class="stats__label">Audience</div>
         </div>
         <div class="stats__item">
-          <div class="stats__number"><span class="gradient-text" data-count="3" data-suffix="">0</span></div>
+          <div class="stats__number" data-count="3" data-suffix="">0</div>
           <div class="stats__label">Years of Stories</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NAV TILES -->
-  <section class="section" aria-label="Explore disciplines">
+  <!-- ═══════════════════════════════════════════════════════════
+       QUICK NAVIGATION TILES
+       ═══════════════════════════════════════════════════════════ -->
+  <section class="section" aria-label="Explore our disciplines">
     <div class="container">
-      <h2 class="reveal" style="margin-bottom:var(--space-2xl);">Explore</h2>
+      <h2 class="reveal" style="margin-bottom:var(--space-2xl);text-align:center;">Explore</h2>
       <div class="nav-tiles reveal-stagger">
         <a href="our-works.html#film" class="nav-tile">
-          <div class="nav-tile__image" style="background:linear-gradient(135deg,#1a2d40,#0a0a0a);"></div>
+          <div class="nav-tile__image" style="background:linear-gradient(135deg,#1a2d40,#0D1B2A);"></div>
           <div class="nav-tile__overlay"></div>
           <div class="nav-tile__content">
-            <div class="nav-tile__icon">&#127916;</div>
+            <div class="nav-tile__icon">🎬</div>
             <div class="nav-tile__title">Films</div>
             <div class="nav-tile__count">8 Productions</div>
           </div>
         </a>
         <a href="our-works.html#theatre" class="nav-tile">
-          <div class="nav-tile__image" style="background:linear-gradient(135deg,#2a1a1a,#0a0a0a);"></div>
+          <div class="nav-tile__image" style="background:linear-gradient(135deg,#2a1a1a,#0D1B2A);"></div>
           <div class="nav-tile__overlay"></div>
           <div class="nav-tile__content">
-            <div class="nav-tile__icon">&#127917;</div>
+            <div class="nav-tile__icon">🎭</div>
             <div class="nav-tile__title">Theatre</div>
             <div class="nav-tile__count">6 Productions</div>
           </div>
         </a>
         <a href="our-works.html#music" class="nav-tile">
-          <div class="nav-tile__image" style="background:linear-gradient(135deg,#1a2a1a,#0a0a0a);"></div>
+          <div class="nav-tile__image" style="background:linear-gradient(135deg,#1a2a1a,#0D1B2A);"></div>
           <div class="nav-tile__overlay"></div>
           <div class="nav-tile__content">
-            <div class="nav-tile__icon">&#127925;</div>
+            <div class="nav-tile__icon">🎵</div>
             <div class="nav-tile__title">Music</div>
             <div class="nav-tile__count">5 Albums</div>
           </div>
         </a>
         <a href="our-works.html#photography" class="nav-tile">
-          <div class="nav-tile__image" style="background:linear-gradient(135deg,#2a2a1a,#0a0a0a);"></div>
+          <div class="nav-tile__image" style="background:linear-gradient(135deg,#2a2a1a,#0D1B2A);"></div>
           <div class="nav-tile__overlay"></div>
           <div class="nav-tile__content">
-            <div class="nav-tile__icon">&#128247;</div>
+            <div class="nav-tile__icon">📷</div>
             <div class="nav-tile__title">Photography</div>
             <div class="nav-tile__count">4 Exhibitions</div>
           </div>
@@ -173,7 +188,9 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ═══════════════════════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════════════════════ -->
   <section class="section" aria-label="About us">
     <div class="container">
       <div class="about__grid">
@@ -184,54 +201,61 @@
           <p class="about__text">
             Classroom Choirs is a youth-driven cultural collective that produces short films,
             theatre productions, original music, and photography. Founded by students who
-            refused to wait for the "right time," we create outside the system.
+            refused to wait for the "right time," we create outside the system — inside a classroom,
+            without permission, without budgets, without waiting.
           </p>
           <p class="about__text">
             Every production is a testament to what happens when young people decide that their
-            voices matter enough to be heard.
+            voices matter enough to be heard. We are not a club. We are not a school project.
+            We are a living, breathing cultural collective.
           </p>
           <a href="members.html" class="btn btn--ghost" style="margin-top:var(--space-lg);">Meet the Company</a>
         </div>
         <div class="about__image-wrapper reveal">
-          <div class="about__image-fallback" role="img" aria-label="Behind the scenes">&#127917;</div>
+          <div class="about__image-fallback" role="img" aria-label="Behind the scenes of Classroom Choirs">🎭</div>
         </div>
       </div>
-      <div class="about__pillars reveal-stagger">
+
+      <div class="about__pillars reveal-stagger" style="margin-top:var(--space-3xl);">
         <div class="about__pillar">
-          <div class="about__pillar-icon">&#127916;</div>
+          <div class="about__pillar-icon">🎬</div>
           <div class="about__pillar-name">Films</div>
         </div>
         <div class="about__pillar">
-          <div class="about__pillar-icon">&#127917;</div>
+          <div class="about__pillar-icon">🎭</div>
           <div class="about__pillar-name">Theatre</div>
         </div>
         <div class="about__pillar">
-          <div class="about__pillar-icon">&#127925;</div>
+          <div class="about__pillar-icon">🎵</div>
           <div class="about__pillar-name">Music</div>
         </div>
         <div class="about__pillar">
-          <div class="about__pillar-icon">&#128247;</div>
+          <div class="about__pillar-icon">📷</div>
           <div class="about__pillar-name">Photography</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
+  <!-- ═══════════════════════════════════════════════════════════
+       NEWSLETTER
+       ═══════════════════════════════════════════════════════════ -->
   <section class="newsletter" aria-label="Newsletter">
     <div class="container">
       <div class="newsletter__inner reveal">
         <h2 class="newsletter__title">Stay in the Spotlight</h2>
-        <p class="newsletter__text">No noise. Just the stories that matter.</p>
+        <p class="newsletter__text">Get updates on our latest productions, events, and opportunities. No noise — just the stories that matter.</p>
         <form class="newsletter__form" onsubmit="return false;">
-          <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email" required>
+          <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
           <button type="submit" class="newsletter__submit">Subscribe</button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════ -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
@@ -240,7 +264,10 @@
             <div class="navbar__emblem" aria-hidden="true">CC</div>
             <span class="navbar__brand-text">Classroom Choirs</span>
           </a>
-          <p class="footer__brand-desc">A youth-driven cultural collective producing short films, theatre, original music, and photography. Made with passion, without permission.</p>
+          <p class="footer__brand-desc">
+            A youth-driven cultural collective producing short films, theatre, original music,
+            and photography. Made with passion, without permission.
+          </p>
         </div>
         <div>
           <h4 class="footer__heading">Navigate</h4>
@@ -265,14 +292,16 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <span class="footer__copy">&copy; 2026 Classroom Choirs</span>
+        <span class="footer__copy">&copy; 2026 Classroom Choirs. All rights reserved.</span>
         <span class="footer__tagline">Crafted with intention</span>
         <div class="footer__emblem" aria-hidden="true">CC</div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
   <script src="js/app.js"></script>
 </body>
 </html>
