@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +7,33 @@
   <meta name="description" content="Join us for screenings, workshops, performances, and showcases.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-  <div class="curtain" aria-hidden="true">
-    <div class="curtain__panel curtain__panel--left"></div>
-    <div class="curtain__panel curtain__panel--right"></div>
-  </div>
-
+<body class="noise">
+  <div class="curtain" aria-hidden="true"><div class="curtain__panel curtain__panel--left"></div><div class="curtain__panel curtain__panel--right"></div></div>
   <div class="scroll-progress" aria-hidden="true"></div>
   <div class="scroll-progress__label">End of Act</div>
   <div class="page-transition" aria-hidden="true"></div>
 
-  <!-- Topbar -->
   <div class="topbar" role="banner">
     <div class="container topbar__inner">
-      <div class="topbar__marquee" aria-label="Upcoming announcements">
-        <div class="topbar__marquee-track">
-          <span class="topbar__marquee-item">Short Film Screening — July 15, 2026</span>
-          <span class="topbar__marquee-item">Theatre Workshop — July 22, 2026</span>
-          <span class="topbar__marquee-item">Original Composition Showcase — August 5, 2026</span>
-          <span class="topbar__marquee-item">Short Film Screening — July 15, 2026</span>
-          <span class="topbar__marquee-item">Theatre Workshop — July 22, 2026</span>
-          <span class="topbar__marquee-item">Original Composition Showcase — August 5, 2026</span>
-        </div>
-      </div>
+      <div class="topbar__marquee" aria-label="Announcements"><div class="topbar__marquee-track">
+        <span class="topbar__marquee-item">Short Film Screening — July 15, 2026</span>
+        <span class="topbar__marquee-item">Theatre Workshop — July 22, 2026</span>
+        <span class="topbar__marquee-item">Original Composition Showcase — August 5, 2026</span>
+        <span class="topbar__marquee-item">Short Film Screening — July 15, 2026</span>
+        <span class="topbar__marquee-item">Theatre Workshop — July 22, 2026</span>
+        <span class="topbar__marquee-item">Original Composition Showcase — August 5, 2026</span>
+      </div></div>
       <div class="topbar__actions">
-        <button class="topbar__action-btn topbar__action-btn--search" aria-label="Search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-        <a href="#" class="topbar__action-btn" aria-label="Instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
-        </a>
+        <button class="topbar__action-btn theme-toggle" aria-label="Toggle theme"></button>
+        <button class="topbar__action-btn topbar__action-btn--search" aria-label="Search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        <a href="#" class="topbar__action-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
       </div>
     </div>
   </div>
 
-  <!-- Navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__brand">
-        <div class="navbar__emblem" aria-hidden="true">CC</div>
-        <span class="navbar__brand-text">Classroom Choirs</span>
-      </a>
+      <a href="index.html" class="navbar__brand"><div class="navbar__emblem" aria-hidden="true">CC</div><span class="navbar__brand-text">Classroom Choirs</span></a>
       <div class="navbar__links">
         <a href="index.html" class="navbar__link">Home</a>
         <a href="past-programmes.html" class="navbar__link">Programmes</a>
@@ -56,16 +41,12 @@
         <a href="our-works.html" class="navbar__link">Works</a>
         <a href="members.html" class="navbar__link">Members</a>
       </div>
-      <div class="navbar__hamburger" aria-label="Toggle menu" role="button" tabindex="0">
-        <span class="navbar__hamburger-line"></span>
-        <span class="navbar__hamburger-line"></span>
-        <span class="navbar__hamburger-line"></span>
-      </div>
+      <div class="navbar__hamburger" aria-label="Toggle menu" role="button" tabindex="0"><span class="navbar__hamburger-line"></span><span class="navbar__hamburger-line"></span><span class="navbar__hamburger-line"></span></div>
     </div>
   </nav>
 
   <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
-    <button class="mobile-menu__close" aria-label="Close menu">✕</button>
+    <button class="mobile-menu__close" aria-label="Close menu">&times;</button>
     <a href="index.html" class="mobile-menu__link">Home</a>
     <a href="past-programmes.html" class="mobile-menu__link">Programmes</a>
     <a href="upcoming-events.html" class="mobile-menu__link">Events</a>
@@ -74,19 +55,13 @@
   </div>
 
   <div class="search-overlay" role="dialog" aria-label="Search">
-    <button class="search-overlay__close" aria-label="Close search">✕</button>
-    <input type="text" class="search-overlay__input" placeholder="Search works, events, members..." aria-label="Search">
+    <button class="search-overlay__close" aria-label="Close search">&times;</button>
+    <input type="text" class="search-overlay__input" placeholder="Search..." aria-label="Search">
     <div class="search-overlay__results"></div>
   </div>
 
-  <div class="lightbox" role="dialog" aria-label="Preview">
-    <button class="lightbox__close" aria-label="Close preview">✕</button>
-    <div class="lightbox__content"></div>
-  </div>
+  <div class="lightbox" role="dialog" aria-label="Preview"><button class="lightbox__close" aria-label="Close preview">&times;</button><div class="lightbox__content"></div></div>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       PAGE HEADER
-       ═══════════════════════════════════════════════════════════ -->
   <section class="page-header">
     <div class="ghost-text" style="top:-20px;right:-80px;">UPCOMING</div>
     <div class="container" style="position:relative;z-index:1;">
@@ -95,74 +70,32 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       EVENTS
-       ═══════════════════════════════════════════════════════════ -->
   <section class="section" aria-label="Upcoming events">
     <div class="container">
-      <div class="events-grid" id="eventsGrid">
-        <!-- Populated by JS -->
-      </div>
+      <div class="events-grid" id="eventsGrid"></div>
     </div>
   </section>
 
-  <!-- Newsletter -->
   <section class="newsletter" aria-label="Newsletter">
-    <div class="container">
-      <div class="newsletter__inner reveal">
-        <h2 class="newsletter__title">Stay in the Spotlight</h2>
-        <p class="newsletter__text">Never miss an event. Get notified about screenings, workshops, and performances.</p>
-        <form class="newsletter__form" onsubmit="return false;">
-          <input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email address" required>
-          <button type="submit" class="newsletter__submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
+    <div class="container"><div class="newsletter__inner reveal">
+      <h2 class="newsletter__title">Stay in the Spotlight</h2>
+      <p class="newsletter__text">Never miss an event.</p>
+      <form class="newsletter__form" onsubmit="return false;"><input type="email" class="newsletter__input" placeholder="your@email.com" aria-label="Email" required><button type="submit" class="newsletter__submit">Subscribe</button></form>
+    </div></div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
-        <div>
-          <a href="index.html" class="navbar__brand" style="margin-bottom:var(--space-md);display:inline-flex;">
-            <div class="navbar__emblem" aria-hidden="true">CC</div>
-            <span class="navbar__brand-text">Classroom Choirs</span>
-          </a>
-          <p class="footer__brand-desc">A youth-driven cultural collective producing short films, theatre, original music, and photography.</p>
-        </div>
-        <div>
-          <h4 class="footer__heading">Navigate</h4>
-          <a href="index.html" class="footer__link">Home</a>
-          <a href="past-programmes.html" class="footer__link">Past Programmes</a>
-          <a href="upcoming-events.html" class="footer__link">Upcoming Events</a>
-          <a href="our-works.html" class="footer__link">Our Works</a>
-          <a href="members.html" class="footer__link">Members</a>
-        </div>
-        <div>
-          <h4 class="footer__heading">Our Work</h4>
-          <a href="our-works.html" class="footer__link">Films</a>
-          <a href="our-works.html" class="footer__link">Theatre</a>
-          <a href="our-works.html" class="footer__link">Music</a>
-          <a href="our-works.html" class="footer__link">Photography</a>
-        </div>
-        <div>
-          <h4 class="footer__heading">Contact</h4>
-          <a href="mailto:hello@classroomchoirs.org" class="footer__link">hello@classroomchoirs.org</a>
-          <a href="#" class="footer__link">Instagram</a>
-          <a href="#" class="footer__link">YouTube</a>
-        </div>
+        <div><a href="index.html" class="navbar__brand" style="margin-bottom:var(--space-md);display:inline-flex;"><div class="navbar__emblem" aria-hidden="true">CC</div><span class="navbar__brand-text">Classroom Choirs</span></a><p class="footer__brand-desc">A youth-driven cultural collective producing short films, theatre, original music, and photography.</p></div>
+        <div><h4 class="footer__heading">Navigate</h4><a href="index.html" class="footer__link">Home</a><a href="past-programmes.html" class="footer__link">Past Programmes</a><a href="upcoming-events.html" class="footer__link">Upcoming Events</a><a href="our-works.html" class="footer__link">Our Works</a><a href="members.html" class="footer__link">Members</a></div>
+        <div><h4 class="footer__heading">Our Work</h4><a href="our-works.html" class="footer__link">Films</a><a href="our-works.html" class="footer__link">Theatre</a><a href="our-works.html" class="footer__link">Music</a><a href="our-works.html" class="footer__link">Photography</a></div>
+        <div><h4 class="footer__heading">Contact</h4><a href="mailto:hello@classroomchoirs.org" class="footer__link">hello@classroomchoirs.org</a><a href="#" class="footer__link">Instagram</a><a href="#" class="footer__link">YouTube</a></div>
       </div>
-      <div class="footer__bottom">
-        <span class="footer__copy">&copy; 2026 Classroom Choirs. All rights reserved.</span>
-        <span class="footer__tagline">Crafted with intention</span>
-        <div class="footer__emblem" aria-hidden="true">CC</div>
-      </div>
+      <div class="footer__bottom"><span class="footer__copy">&copy; 2026 Classroom Choirs</span><span class="footer__tagline">Crafted with intention</span><div class="footer__emblem" aria-hidden="true">CC</div></div>
     </div>
   </footer>
-
-  <button class="back-to-top" aria-label="Back to top">↑</button>
-
+  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
   <script src="js/app.js"></script>
   <script>
     (function () {
@@ -170,33 +103,10 @@
       if (!grid) return;
       var db = JSON.parse(localStorage.getItem('cc-db') || '{}');
       var events = db.events || [];
-
-      if (events.length === 0) {
-        grid.innerHTML = '<p style="text-align:center;color:var(--text-muted);font-style:italic;grid-column:1/-1;padding:48px 0;">No upcoming events at the moment. Check back soon.</p>';
-        return;
-      }
-
+      if (events.length === 0) { grid.innerHTML = '<p style="text-align:center;color:var(--text-muted);font-style:italic;grid-column:1/-1;padding:48px 0;">No upcoming events. Check back soon.</p>'; return; }
       grid.innerHTML = events.map(function (ev) {
-        var d = new Date(ev.date);
-        var day = d.getDate();
-        var monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        var month = monthNames[d.getMonth()];
-        var time = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-        return '<div class="playbill reveal">' +
-          '<div class="playbill__mode">' + ev.mode + '</div>' +
-          '<h3 class="playbill__name">' + ev.name + '</h3>' +
-          '<div class="playbill__date-block">' +
-            '<div class="playbill__date-num">' + day + '</div>' +
-            '<div class="playbill__date-info">' +
-              '<div class="playbill__date-month">' + month + '</div>' +
-              '<div class="playbill__date-time">' + time + '</div>' +
-            '</div>' +
-          '</div>' +
-          '<p class="playbill__description">' + ev.description + '</p>' +
-          '<div class="playbill__countdown" data-countdown="' + ev.date + '"></div>' +
-          '<a href="#" class="playbill__register" onclick="return false;">Reserve Your Seat →</a>' +
-        '</div>';
+        var d = new Date(ev.date); var day = d.getDate(); var mn = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; var month = mn[d.getMonth()]; var time = d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+        return '<div class="playbill reveal"><div class="playbill__mode">' + ev.mode + '</div><h3 class="playbill__name">' + ev.name + '</h3><div class="playbill__date-block"><div class="playbill__date-num">' + day + '</div><div class="playbill__date-info"><div class="playbill__date-month">' + month + '</div><div class="playbill__date-time">' + time + '</div></div></div><p class="playbill__description">' + ev.description + '</p><div class="playbill__countdown" data-countdown="' + ev.date + '"></div><a href="#" class="playbill__register" onclick="return false;">Reserve Your Seat &rarr;</a></div>';
       }).join('');
     })();
   </script>
